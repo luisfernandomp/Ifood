@@ -11,7 +11,7 @@ namespace iFood
         }
 
         public string MostrarDados(){
-            return $"Restaurante: {NomeFantasia}     \nEndereco: {Endereco}    ";
+            return $"Restaurante: {NomeFantasia}     \nEndereço: {Endereco}    ";
         }
     }
 }

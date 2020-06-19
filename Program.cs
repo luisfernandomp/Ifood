@@ -97,9 +97,12 @@ namespace iFood
                     Console.Clear();
                     Console.ResetColor();
                     System.Console.WriteLine("Dados inválidos! Tente novamente.");
+                    Thread.Sleep(2000);
                 }
             }
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.Red;
             System.Console.WriteLine("\n-------------------- Pedido");
             System.Console.WriteLine("Acompanhamento: "+pay.itens[0]);
             System.Console.WriteLine("Bebida: "+pay.itens[1]);
@@ -107,9 +110,11 @@ namespace iFood
             System.Console.WriteLine("Total: R$"+ pay.ValorTotal);
             System.Console.WriteLine("-----------------------------\n");
             string p = pay.EntregarPedido();
+            Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.Blue;
             System.Console.WriteLine("Status do pedido: "+p);
             Thread.Sleep(2500);
+            Console.ResetColor();
             System.Environment.Exit(0);
         }
     }
