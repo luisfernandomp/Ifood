@@ -57,6 +57,8 @@ namespace iFood
                                 System.Console.WriteLine("---- Mostrar Dados do Pedido ---");
                                 System.Console.WriteLine(rest.MostrarDados());
                                 System.Console.WriteLine("--------------------------------");
+                                System.Console.WriteLine("Cliente\n" + c.MostrarDados());
+                                System.Console.WriteLine("--------------------------------");
                                 Thread.Sleep(5000);
                                 Console.ResetColor();
                                 Console.Clear();
