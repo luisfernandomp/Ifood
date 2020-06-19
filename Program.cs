@@ -56,6 +56,7 @@ namespace iFood
                                 Console.ForegroundColor = ConsoleColor.White;
                                 System.Console.WriteLine("---- Mostrar Dados do Pedido ---");
                                 System.Console.WriteLine(rest.MostrarDados());
+                                System.Console.WriteLine($"Forma de pagamento: {pay.Forma}");
                                 System.Console.WriteLine("--------------------------------");
                                 System.Console.WriteLine("Cliente\n" + c.MostrarDados());
                                 System.Console.WriteLine("--------------------------------");
